@@ -11,19 +11,22 @@ class directorioController extends Controller
 {
     public function mostrarDirectorios(){
         $directorio = new directorio();
-        $directorio -> all();
+        $directorio -> all("nombre");
 
-        return view("directorio", compact("directorio"));
-        // echo $directorio;
+        // return view("directorio", compact("directorio"));
+        echo $directorio;
     }
 
     public function crearDirectorios(Request $request){
+        return view("crearEntrada");
+    }
+    public function agregarDirectorios(Request $request){
 
         $directorio = new directorio();
-        $directorio -> $nombre = $request -> $nombre;
-        $directorio -> $apellido = $request -> $apellido;
-        $directorio -> $correo = $request -> $correo;
-        $directorio -> $telefono = $request -> $telefono;
+        $directorio -> nombre = $request -> nombre;
+        $directorio -> apellido = $request -> apellido;
+        $directorio -> correo = $request -> correo;
+        $directorio -> telefono = $request -> telefono;
         $directorio -> save();
 
         return view("crearEntrada", compact("directorio"));

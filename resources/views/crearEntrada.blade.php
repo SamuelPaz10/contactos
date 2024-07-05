@@ -44,7 +44,7 @@
                                 <p class="card-text">
                                     <form action="directorio.crear" method="POST">
                                         <label for="">C&oacute;digo</label>
-                                        <input type="text" name="codigo" class="form-control">
+                                        <input type="text" name="codigo" class="form-control" value=>
 
                                         <label for="">Nombre</label>
                                         <input type="text" name="nombre" class="form-control">
