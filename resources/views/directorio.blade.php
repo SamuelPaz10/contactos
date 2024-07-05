@@ -18,7 +18,7 @@
                 <div class="p-6">
 
                 <p>
-                    <a href="#" class="btn btn-primary">Agregar nuevo</a>
+                    <a href=" # " class="btn btn-primary">Agregar nuevo</a>
                     <a href="#" class="btn btn-success">Buscar</a>
                 </p>
 
@@ -33,10 +33,14 @@
                     </thead>
                     <tbody>
                             <tr>
-                                <td>0001</td>
-                                <td>Julio</td>
-                                <td>Cortez</td>
-                                <td>9999</td>
+                                {{-- <td> {{ $codigoentrada }} </td>
+                                <td> {{ $nombre }} </td>
+                                <td> {{ $apellido }} </td>
+                                <td> {{ $telefono }} </td> --}}
+                                <td>asdf</td>
+                                <td>asd </td>
+                                <td>asd </td>
+                                <td>123</td>
                                 <td>
                                     <a href="#" class="btn btn-info">Ver</a>
                                 </td>
