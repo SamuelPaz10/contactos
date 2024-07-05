@@ -11,7 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create("directorio", function (Blueprint $table) {
+            $table->string("codigoEntrada")->primary();
+            $table->string("nombre");
+            $table->string("apellido");
+            $table->string("correo")->unique();
+            $table->string("telefono");
+        });
     }
 
     /**

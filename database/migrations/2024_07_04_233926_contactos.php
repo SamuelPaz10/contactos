@@ -11,7 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create("contactos", function (Blueprint $table) {
+            $table->integer("id");
+            $table->string("codigoEntrada");
+            $table->string("nombre");
+            $table->string("apellido");
+            $table->string("telefono");
+        });
     }
 
     /**
@@ -19,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        
     }
 };
